@@ -17,7 +17,7 @@ body {
 #main-nav {
     grid-area: 1 / 1 / 1 / span 3;
     display: flex;
-    flex: row nowrap;
+    flex-direction: row;
     justify-content: space-evenly;
 }
 
