@@ -21,6 +21,7 @@ h3 {
 .project-sub,
 .project-description {
     font-size: 1em;
+    overflow-wrap: break-word;
 }
 
 .project:hover {
