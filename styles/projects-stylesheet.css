@@ -1,5 +1,6 @@
 .project {
     text-align: left;
+    overflow-wrap: break-word;
     color: #EEFBFB;
     background-color: #007CC7;
     margin: 40px;
