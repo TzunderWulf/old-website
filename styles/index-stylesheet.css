@@ -1,0 +1,72 @@
+#welcome-section {
+    text-align: center;
+    margin: 20vw 0 10vw 0;
+}
+
+#welcome-title {
+    font-size: 8vw;
+}
+
+#name {
+    font-size: 2.5vw;
+}
+
+#feat-projects {
+    text-align: center;
+    margin: 5vw 0;
+}
+
+#projects {
+    display: flex;
+    flex: row nowrap;
+    justify-content: space-evenly;
+    height: max-content;
+}
+
+.project {
+    text-align: left;
+    text-decoration: none;
+    color: #EEFBFB;
+    background-color: #007CC7;
+    margin: 10px;
+    padding: 10px;
+    flex-grow: 1;
+    transition: all 0.4s linear 0.2ms;
+    cursor: pointer;
+}
+
+.project-title,
+.project-description {
+    font-size: 1em;
+}
+
+.project:hover {
+    background-color: #4DA8DA;
+}
+
+#about-contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+@media only screen and (max-width: 600px) {
+    #projects {
+        flex-direction: column;
+    }
+
+    #about-contact {
+        flex-direction: column;
+    }
+
+    .button {
+        margin: 20px auto;
+    }
+}
+
+@media only screen and (min-width: 1700px) {
+    #welcome-section {
+        margin: 10vw 0 10vw 0;
+        font-size: 6vw;
+    }
+}
