@@ -9,11 +9,6 @@
     line-height: 1.5em;
 }
 
-h2 {
-    font-size: 1.5em;
-    overflow-wrap: break-word;
-}
-
 h3 {
     font-size: 1em;
 }
@@ -23,17 +18,11 @@ h3 {
 }
 
 .project-title,
+.project-sub,
 .project-description {
     font-size: 1em;
 }
 
 .project:hover {
     background-color: #4DA8DA;
-}
-
-@media only screen and (max-width: 720px) {
-    .project-title {
-        overflow-wrap: break-word;
-        hyphens: auto;
-    }
 }
