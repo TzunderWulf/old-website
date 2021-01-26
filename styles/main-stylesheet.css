@@ -100,16 +100,3 @@ footer {
         padding: 20px;
     }
 }
-
-@media only screen and (min-width: 1700px) {
-    .container {
-        display: grid;
-        grid-template-columns: 1fr 2fr 1fr;
-        grid-template-rows: auto auto 1fr auto;
-    }
-
-    #welcome-section {
-        margin: 10vw 0 10vw 0;
-        font-size: 6vw;
-    }
-}
