@@ -1,7 +1,25 @@
 .project {
+    text-align: left;
+    color: #EEFBFB;
     background-color: #007CC7;
+    margin: 40px;
     padding: 10px;
-    margin: 50px 0;
+    transition: all 0.4s linear 0.2ms;
+    cursor: pointer;
+    line-height: 1.5em;
+}
+
+.project-link {
+    text-decoration: none;
+}
+
+.project-title,
+.project-description {
+    font-size: 1em;
+}
+
+.project:hover {
+    background-color: #4DA8DA;
 }
 
 @media only screen and (max-width: 600px) {}
