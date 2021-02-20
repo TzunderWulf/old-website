@@ -74,4 +74,8 @@
         margin: 10vw 0 10vw 0;
         font-size: 6vw;
     }
+
+    .project {
+        width: 350px;
+    }
 }
