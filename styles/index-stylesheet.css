@@ -8,7 +8,7 @@
 }
 
 #name {
-    font-size: 2.5vw;
+    font-size: 3vw;
 }
 
 #feat-projects {
@@ -18,7 +18,7 @@
 
 #projects {
     display: flex;
-    flex: row nowrap;
+    flex-flow: row nowrap;
     justify-content: space-evenly;
     height: max-content;
 }
@@ -28,14 +28,12 @@
     text-decoration: none;
     color: #EEFBFB;
     background-color: #007CC7;
-    flex: 1 1 0px;
+    width: 200px;
     line-height: 1.5em;
     margin: 10px;
     padding: 10px;
     transition: all 0.4s linear 0.2ms;
     cursor: pointer;
-    overflow-wrap: break-word;
-    hyphens: auto;
 }
 
 .project-title,
@@ -56,6 +54,10 @@
 @media only screen and (max-width: 600px) {
     #projects {
         flex-direction: column;
+    }
+
+    .project {
+        width: auto;
     }
 
     #about-contact {
