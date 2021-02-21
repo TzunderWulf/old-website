@@ -86,8 +86,7 @@ footer {
 @media only screen and (max-width: 720px) {
     .container {
         display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto 1fr auto;
+        grid-template-columns: 1fr; 
     }
 
     #main-nav {
@@ -114,7 +113,6 @@ footer {
     .container {
         display: grid;
         grid-template-columns: 1fr 2fr 1fr;
-        grid-template-rows: auto 1fr auto;
     }
 
     #welcome-section {

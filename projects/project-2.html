@@ -3,16 +3,15 @@
 
 <head>
     <title>Tzunder</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1">
     <link rel="stylesheet" href="../styles/main-stylesheet.css">
+    <link rel="stylesheet" href="../styles/project-page-stylesheet.css">
     <link rel="icon" type="image/png" href="../images/logo.jpg">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 
 <body class="container">
-    <header>
-
-    </header>
     <nav id="main-nav">
         <a class="nav-link" href="../index.html">Home</a>
         <a class="nav-link" href="../projects.html">Projects</a>
@@ -20,7 +19,30 @@
         <a class="nav-link" href="../contact.html">Contact</a>
     </nav>
     <main>
-        <h1 class="coming-soon">Coming soon...</h1>
+        <!-- the game itself to be played -->
+        <section id="guessing-game">
+            <h1>Guess the Number</h1>
+            <button id="start-game">Start the Game</button>
+            <p id="message"></p>
+            <form id="guess-form" method="post">
+                <div>
+                    <input type="text" id="guess">
+                </div>
+                <input type="submit" name="submit" value="Make a Guess!">
+            </form>
+            <p id="number-guesses"></p>
+            <p id="last-guess"></p>
+        </section>
+        <!-- short explanation about game or code -->
+        <section class="explanation">
+            <h1>Explanation</h1>
+            <p>
+                This little game was fully coded in JavaScript. The goal of the game is to guess the right number. 
+                Officialy meant as a challenge for some schoolwork, but also for fun.
+            </p>
+            <a class="link-code" href="https://github.com/TzunderWulf/tzunderwulf.github.io/blob/main/js/projects-js/guess-game.js">
+                See the JavaScript code on Github</a>
+        </section>
     </main>
     <footer>
         <div>
@@ -40,6 +62,7 @@
             </a>
         </div>
     </footer>
+    <script src="../js/projects-js/guess-game.js"></script>
 </body>
 
 </html>

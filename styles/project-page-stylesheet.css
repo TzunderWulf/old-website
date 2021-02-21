@@ -1,0 +1,48 @@
+#guessing-game {
+    margin: 50px auto;
+    text-align: center;
+    padding: 20px;
+    width: auto;
+    font-size: 1.3em;
+    line-height: 3vh;
+}
+
+#start-game, input[type=submit]{
+    text-align: center;
+    background-color: #007CC7;
+    border: 2px solid #007CC7;
+    width: auto;
+    padding: 15px 30px;
+    font-family: 'Press Start 2P', cursive;
+    color: #EEFBFB;
+    transition: all 0.4s linear 0.2ms;
+    cursor: pointer;
+    margin: 10px;
+}
+
+#start-game:hover, input[type=submit]:hover {
+    background-color: #4DA8DA;
+    border: 2px solid #4DA8DA;
+}
+
+#guess {
+    width: 100px;
+    padding: 20px 0;
+    text-align: center;
+    margin: 10px;
+    font-size: 1.3em;
+}
+
+.link-code {
+    color: #EEFBFB;
+}
+
+.explanation {
+    line-height: 3vh;
+}
+
+@media only screen and (min-width: 720px) {
+    #guessing-game {
+        width: 500px;
+    }
+}
