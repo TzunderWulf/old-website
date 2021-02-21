@@ -1,9 +1,8 @@
-let nickName = document.getElementById("command-nickname-exe");
-let fullName = document.getElementById("command-name-exe");
-let languages = document.getElementById("command-lang-exe");
-
 // fake executing commands with buttons
+
 document.getElementById("command-nickname").addEventListener("click", function() {
+    let nickName = document.getElementById("command-nickname-exe");
+      
     if (nickName.style.display == "block") {
         nickName.style.display = "none";
     } else {
@@ -12,6 +11,8 @@ document.getElementById("command-nickname").addEventListener("click", function()
 })
 
 document.getElementById("command-name").addEventListener("click", function() {
+    let fullName = document.getElementById("command-name-exe");
+
     if (fullName.style.display == "block") {
         fullName.style.display = "none";
     } else {
@@ -20,6 +21,8 @@ document.getElementById("command-name").addEventListener("click", function() {
 })
 
 document.getElementById("command-lang").addEventListener("click", function() {
+    let languages = document.getElementById("command-lang-exe");
+
     if (languages.style.display == "block") {
         languages.style.display = "none";
     } else {
