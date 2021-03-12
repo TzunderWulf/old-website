@@ -8,19 +8,20 @@ let message = document.getElementById("message");
 let lastGuess = document.getElementById("last-guess");
 let numberGuesses = document.getElementById("number-guesses");
 
-let startButton = document.getElementById("start-game"); 
+window.addEventListener('load', init)
 
-// variables related to the form
-let form = document.getElementById("guess-form");
-let userInput = document.getElementById("guess");
+function init() {
+    let startButton = document.getElementById("start-game"); 
+    startButton.addEventListener("click", startGame);
 
-startButton.addEventListener("click", startGame);
-form.addEventListener("submit", makeGuess)
+    let form = document.getElementById("guess-form");
+    form.addEventListener("submit", makeGuess)
+}
 
 function startGame() {
     if (playGame) {
         // message the player that the game is already started
-        message.innerHTML = "There is already a game going, please finish this one 100before starting a new one.";
+        message.innerHTML = "There is already a game going, please finish this one before starting a new one.";
     } else {
         playGame = true;
         randomNumber = Math.floor(Math.random() * 100) + 1; // 1 - 100
@@ -48,6 +49,7 @@ function validateGuess(madeGuess) {
 
 function makeGuess(e) {
     e.preventDefault();
+    let userInput = document.getElementById("guess");
 
     if (playGame) {
         let guess = parseInt(userInput.value);
