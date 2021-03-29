@@ -1,0 +1,30 @@
+#container {
+    background-color: white;
+}
+main {
+    padding: 10px;
+}
+
+#explanation {
+    padding: 5vh 0;
+    display: block;
+    margin: auto;
+    max-width: 80%;
+}
+
+.search-form {
+    border: 2px solid black;
+    margin: auto;
+    max-width: fit-content;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.footer-element {
+    text-align: center;
+    flex-grow: 1;
+}

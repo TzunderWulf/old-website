@@ -21,11 +21,13 @@ function init() {
 function startGame() {
     if (playGame) {
         // message the player that the game is already started
-        message.innerHTML = "There is already a game going, please finish this one before starting a new one.";
+        message.innerHTML = `There is already a game going, please finish 
+        this one before starting a new one.`;
     } else {
         playGame = true;
         randomNumber = Math.floor(Math.random() * 100) + 1; // 1 - 100
-        message.innerHTML = "Game has started and a number has been generated, start guessing!";
+        message.innerHTML = `Game has started and a number has been generated, 
+        start guessing!`;
         numberGuesses.innerHTML = "";
         lastGuess.innerHTML = "";
         numberOfGuesses = 0;
@@ -61,7 +63,8 @@ function makeGuess(e) {
             } else if (guess < randomNumber) {
                 message.innerHTML = "Guess higher next time.";
             } else {
-                message.innerHTML = `You've guessed the right number, it was indeed ${randomNumber}.`;
+                message.innerHTML = `You've guessed the right number, 
+                it was indeed ${randomNumber}.`;
                 playGame = false;
             }
             numberOfGuesses += 1;
