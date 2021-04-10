@@ -41,6 +41,8 @@ function startGame() {
 
 /**
  * After a guess has been made, make sure it is valid.
+ * 
+ * @param madeGuess
 */
 function validateGuess(madeGuess) {
     if (isNaN(madeGuess)) {
@@ -61,6 +63,8 @@ function validateGuess(madeGuess) {
  * After the form-field has been submitted, check if a game is running
  * and if so validate the guess made. Is the guess valid, check if it
  * is right and send a message back to the user.
+ * 
+ * @param e
 */
 function makeGuess(e) {
     e.preventDefault(); // Make sure page doesn't refresh
