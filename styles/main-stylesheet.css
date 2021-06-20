@@ -1,122 +1,61 @@
-html,
-body {
+html, body {
     width: 100%;
     height: 100%;
     margin: 0;
-    background-color: #203647;
-    color: #EEFBFB;
-    font-family: 'Press Start 2P', cursive;
-}
 
-.container {
-    display: grid;
-    grid-template-columns: 1fr 5fr 1fr;
-    grid-template-rows: auto 1fr auto;
-}
+    background-color: #000814;
+    color: #FFC300;
 
-#main-nav {
-    grid-area: 1 / 1 / 1 / span 3;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-
-.nav-link {
-    text-align: center;
-    text-decoration: none;
-    color: #EEFBFB;
-    background-color: #12232E;
-    padding: 25px 5px;
-    width: 100%;
-    transition: all 0.4s linear 0.2ms;
-    cursor: pointer;
-}
-
-.nav-link:hover {
-    background-color: #007CC7;
+    font-family: 'Nanum Brush Script', cursive;
 }
 
 main {
-    grid-area: 2 / 2 / 2 / 2;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
 }
 
-/* buttons/links (styled as buttons */
-.button {
+#flex-intro {
+    height: 100vh;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+img {
+    width: 50%;
+}
+
+#title, #subtitle {
+    line-height: 0;
+}
+
+#title {
+    font-size: 7.5em;
     text-align: center;
-    background-color: #007CC7;
-    width: 250px;
-    padding: 30px 0;
-    text-decoration: none;
-    color: #EEFBFB;
-    transition: all 0.4s linear 0.2ms;
-    cursor: pointer;
-    margin: 0 0 100px 0;
 }
 
-.button:hover {
-    background-color: #4DA8DA;
+#subtitle {
+    font-size: 2.5em;
+    text-align: end;
 }
 
-.coming-soon {
+#projects {
+    width: 100%;
+
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+}
+
+.project {
+    width: 33%;
+
+    font-size: 2.5em;
     text-align: center;
-    font-size: 5vw;
-    margin-top: 200px;
-}
 
-footer {
-    grid-area: 3 / 1 / 3 / span 3;
-    background-color: #12232E;
-    color: #FFF;
-    text-align: center;
-    padding: 20px 10px;
-    line-height: 40%;
-}
-
-.footer-link {
-    color: #FFF;
-    text-decoration: none;
-}
-
-.footer-image {
-    width: 50px;
-    height: 50px;
-    padding: 0.5em 10px;
-}
-
-@media only screen and (max-width: 720px) {
-    .container {
-        display: grid;
-        grid-template-columns: 1fr; 
-    }
-
-    #main-nav {
-        flex-direction: column;
-        align-items: center;
-        grid-area: 1 / 1 / 1 / 1;
-    }
-
-    .nav-link {
-        padding: 20px 0;
-    }
-
-    main {
-        grid-area: 2 / 1 / 2 / 1;
-        padding: 20px;
-    }
-
-    footer {
-        grid-area: 3 / 1 / 3 / 1;
-    }
-}
-
-@media only screen and (min-width: 1700px) {
-    .container {
-        display: grid;
-        grid-template-columns: 1fr 2fr 1fr;
-    }
-
-    #welcome-section {
-        margin: 10vw 0 10vw 0;
-        font-size: 6vw;
-    }
+    padding: 50px 0;
 }

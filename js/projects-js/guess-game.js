@@ -23,6 +23,7 @@ function init() {
  * Or when a game is already going, tell the player.
 */
 function startGame() {
+    // Check if game has started already
     if (playGame) {
         message.innerHTML = `There is already a game going, please finish 
         this one before starting a new one.`;
