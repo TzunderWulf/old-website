@@ -4,7 +4,7 @@ html, body {
     margin: 0;
 
     background-color: #000814;
-    color: #FFC300;
+    color: #eee6e6;
 
     font-family: 'Nanum Brush Script', cursive;
 }
@@ -14,11 +14,21 @@ main {
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
+    width: 100%;
+}
+
+section {
+    height: 100vh;
+    width: 100%;
+}
+
+.border-top {
+    border-top: 2px solid #eee6e6;
+    width: 80%;
+    padding: 10px 0;
 }
 
 #flex-intro {
-    height: 100vh;
-
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-evenly;
@@ -29,33 +39,66 @@ img {
     width: 50%;
 }
 
-#title, #subtitle {
+.title, #subtitle {
     line-height: 0;
 }
 
-#title {
-    font-size: 7.5em;
+.underline {
+    text-decoration: underline;
+}
+
+.title {
+    font-size: 8em;
     text-align: center;
 }
 
 #subtitle {
-    font-size: 2.5em;
+    font-size: 3em;
     text-align: end;
 }
 
-#projects {
-    width: 100%;
-
+.contact-info, .methods-contact, .my-projects {
     display: flex;
-    flex-flow: row;
-    justify-content: space-around;
+}
+
+.contact-info {
+    flex-direction: column;
+    width: 100%;    
+    align-items: center;
+    margin-top: 100px;
+}
+
+.methods-contact {
+    margin: 10px;
+}
+
+.method {
+    width: 180px;
+    padding: 0 30px;
+    height: 180px;
+}
+
+.my-projects {
+    width: 100%;
+    justify-content: space-evenly;
 }
 
 .project {
     width: 33%;
+    border: 2px solid #eee6e6;
+    margin: 0 10px;
+    padding: 20px;
+    font-family: 'League Spartan', sans-serif;
+}
 
-    font-size: 2.5em;
-    text-align: center;
+.card-title {
+    font-size: 2.8em;
+}
 
-    padding: 50px 0;
+.card-summary {
+    font-size: 2em;
+}
+
+.card-btn {
+
 }
