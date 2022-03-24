@@ -1,104 +1,47 @@
 html, body {
-    width: 100%;
-    height: 100%;
+    padding: 0;
     margin: 0;
 
-    background-color: #000814;
-    color: #eee6e6;
-
-    font-family: 'Nanum Brush Script', cursive;
-}
-
-main {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
     width: 100%;
+    height: 100%;
 }
 
-section {
+body {
+    /* border: 2px solid red; */
+}
+
+#cover-image {
+    width: 100%;
     height: 100vh;
-    width: 100%;
+    object-fit: cover;
+    z-index: 1;
 }
 
-.border-top {
-    border-top: 2px solid #eee6e6;
-    width: 80%;
-    padding: 10px 0;
-}
+.on-top {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
 
-#flex-intro {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-evenly;
-    align-items: center;
-}
+    border: 2px solid white;
+    border-radius: 16px;
 
-img {
-    width: 50%;
-}
+    background-color: white;
+    opacity: 80%;
 
-.title, #subtitle {
-    line-height: 0;
-}
+    padding: 0 25px 15px 25px;
 
-.underline {
-    text-decoration: underline;
+    text-align: center;
+    font-weight: bolder;
+    line-height: 15px;
 }
 
 .title {
-    font-size: 8em;
-    text-align: center;
-}
-
-#subtitle {
     font-size: 3em;
-    text-align: end;
+    font-family: 'Permanent Marker', cursive;
 }
 
-.contact-info, .methods-contact, .my-projects {
-    display: flex;
-}
-
-.contact-info {
-    flex-direction: column;
-    width: 100%;    
-    align-items: center;
-    margin-top: 100px;
-}
-
-.methods-contact {
-    margin: 10px;
-}
-
-.method {
-    width: 180px;
-    padding: 0 30px;
-    height: 180px;
-}
-
-.my-projects {
-    width: 100%;
-    justify-content: space-evenly;
-}
-
-.project {
-    width: 33%;
-    border: 2px solid #eee6e6;
-    margin: 0 10px;
-    padding: 20px;
-    font-family: 'League Spartan', sans-serif;
-}
-
-.card-title {
-    font-size: 2.8em;
-}
-
-.card-summary {
-    font-size: 2em;
-}
-
-.card-btn {
-
+.subtitle {
+    font-family: 'Righteous', cursive;
 }
