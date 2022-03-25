@@ -1,43 +1,34 @@
-// fake executing commands with buttons
+document.addEventListener('scroll', makeMenuSticky)
 
-document.getElementById("command-nickname").addEventListener("click", function() {
-    let nickName = document.getElementById("command-nickname-exe");
-      
-    if (nickName.style.display == "block") {
-        nickName.style.display = "none";
-    } else {
-        nickName.style.display = "block";
-    }
-})
+let menu = document.getElementById("hamburger");
+menu.addEventListener("click", hamburgerMenu);
 
-document.getElementById("command-name").addEventListener("click", function() {
-    let fullName = document.getElementById("command-name-exe");
+let fullMenu = document.getElementById("full-menu");
+let hiddenMenu = document.getElementById("hidden-menu");
+const sticky = fullMenu.offsetTop;
 
-    if (fullName.style.display == "block") {
-        fullName.style.display = "none";
-    } else {
-        fullName.style.display = "block";
-    }
-})
+function hamburgerMenu(e) {
+  let menu = e.target;
 
-document.getElementById("command-lang").addEventListener("click", function() {
-    let languages = document.getElementById("command-lang-exe");
+  if (menu.classList.contains('hamburger-closed')) {
+    menu.classList.toggle('hamburger-closed');
+    menu.classList.toggle('bi-list');
+    menu.classList.toggle('bi-x-lg')
+    hiddenMenu.classList.toggle('hidden')
+    fullMenu.classList.toggle('background');
+  } else {
+    menu.classList.toggle('bi-x-lg')
+    menu.classList.toggle('hamburger-closed');
+    menu.classList.toggle('bi-list');
+    hiddenMenu.classList.toggle('hidden')
+    fullMenu.classList.toggle('background');
+  }
+}
 
-    if (languages.style.display == "block") {
-        languages.style.display = "none";
-    } else {
-        languages.style.display = "block";
-    }
-})
-
-document.getElementById("command-bio").addEventListener("click", function() {
-    let biographyParagraphs = document.getElementsByClassName("command-bio-exe");
-    
-    for (let i = 0; i < biographyParagraphs.length; i++) {
-        if (biographyParagraphs[i].style.display == "block") {
-            biographyParagraphs[i].style.display = "none";
-        } else {
-            biographyParagraphs[i].style.display = "block";
-        }
-    }
-})
+function makeMenuSticky() {
+  if (window.pageYOffset > sticky) {
+    fullMenu.classList.add("sticky");
+  } else {
+    fullMenu.classList.remove("sticky");
+  }
+}
