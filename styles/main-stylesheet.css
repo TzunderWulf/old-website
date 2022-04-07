@@ -208,3 +208,35 @@ section {
     width: 350px;
     height: 250px;
 }
+
+.about-me {
+    font-family: 'Righteous', cursive;
+    font-size: 1.4em;
+
+    /* border: 2px solid white; */
+}
+
+#who-am-i {
+    /* border: 2px solid yellow; */
+    width: 70%;
+}
+
+.small-lh {
+    line-height: 0.5em;
+}
+
+.skills {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.skill {
+    width: 15%;
+    border-radius: 40%;
+}
+
+.white-border {
+    border: 2px solid white;
+}
