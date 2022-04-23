@@ -104,10 +104,18 @@ section {
     font-size: 3em;
     font-family: 'Permanent Marker', cursive;
     text-align: center;
+    line-height: 0;
 }
 
 .subtitle {
     font-family: 'Righteous', cursive;
+}
+
+.full-name {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 1.5em;
+
+    padding-bottom: 20px;
 }
 
 .hidden {
@@ -219,6 +227,8 @@ section {
 #who-am-i {
     /* border: 2px solid yellow; */
     width: 70%;
+    height: fit-content;
+    padding: 0 0 100px 0;
 }
 
 .small-lh {
